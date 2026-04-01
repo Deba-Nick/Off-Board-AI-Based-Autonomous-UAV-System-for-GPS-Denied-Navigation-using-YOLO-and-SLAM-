@@ -15,3 +15,29 @@ An intelligent, autonomous drone system designed to navigate and map environment
 * **Languages:** Python, Java
 * **Concepts & Frameworks:** Artificial Intelligence, Machine Learning, IoT Protocols, Design and Analysis of Algorithms (DAA)
 * **Hardware & Communication:** Custom modified flight controllers, onboard companion computer, wireless telemetry
+
+
+
+
+## 📂 Project Structure
+
+```text
+drone_ai_pilot/
+│
+├── models/                   # Stores AI weights and trained models
+│   └── yolov8n.pt            # YOLOv8 object detection model weights
+│
+├── vision/                   # Computer vision and camera processing logic
+│   └── eyes.py               # Handles visual input and object recognition
+│
+├── control/                  # Flight commands and drone communication
+│   └── flight_bridge.py      # Bridges AI decisions to physical flight controls
+│
+├── map/                      # Real-time mapping output directory
+│   └── [generated_maps].jpg  # Stores saved flight path JPEGs
+│
+├── utils/                    # Helper scripts and calculations
+│   └── zone_math.py          # Mathematical utilities for spatial calculations
+│
+├── requirements.txt          # List of Python dependencies to install
+└── main.py                   # Main execution script to launch the AI pilot system
